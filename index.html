@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockWood Supply Co. - Quality Firewood Delivered or Picked Up | Bulverde, TX</title>
+    <meta name="description" content="RockWood Supply Co. provides quality firewood delivery and pickup service in San Antonio, Bulverde, and surrounding areas inside Loop 1604.">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="RockWood Supply Co Logo">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#coverage">Service Area</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-buttons">
+                    <a href="tel:2108541362" class="btn-call">(210) 854-1362</a>
+                    <a href="tel:2108626968" class="btn-call">(210) 862-6968</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Quality Firewood</h1>
+            <h2>Delivered Or Picked Up</h2>
+            <p>Serving San Antonio, Bulverde & Surrounding Areas</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn btn-primary">Get A Quote</a>
+                <a href="tel:2108541362" class="btn btn-secondary">Call Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="images/rockwood-bulk-bags.jpg" alt="Bulk Firewood Bags">
+                    <h3>Bulk Firewood Bags</h3>
+                    <p>Large bulk bags perfect for commercial properties and large residential orders. Delivered via forklift for easy placement.</p>
+                    <a href="#contact" class="btn">Request Quote</a>
+                </div>
+                <div class="product-card">
+                    <img src="images/rockwood-stacked.jpg" alt="Stacked Firewood Cord">
+                    <h3>Stacked Firewood</h3>
+                    <p>Professionally stacked seasoned firewood. Available in full cords, half cords, and quarter cords. Delivery or pickup available.</p>
+                    <a href="#contact" class="btn">Request Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="coverage" class="coverage">
+        <div class="container">
+            <h2>Delivery Coverage Area</h2>
+            <p class="coverage-description">
+                <strong>Standard Delivery:</strong> Inside Loop 1604<br>
+                <strong>Extended Delivery:</strong> Up to 10 miles from Loop 1604 (additional fee applies)
+            </p>
+            <div id="map"></div>
+            <div class="coverage-note">
+                <p>Not sure if we deliver to your area? <a href="tel:2108541362">Call us at (210) 854-1362</a> to confirm!</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Get A Quote</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="info-item">
+                        <strong>Phone:</strong>
+                        <a href="tel:2108541362">(210) 854-1362</a><br>
+                        <a href="tel:2108626968">(210) 862-6968</a>
+                    </div>
+                    <div class="info-item">
+                        <strong>Address:</strong>
+                        <address>4070 FM 1863<br>Bulverde, TX</address>
+                    </div>
+                    <div class="info-item">
+                        <strong>Service Options:</strong>
+                        <p>Delivery or Self-Pickup</p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="quoteForm">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="tel" name="phone" placeholder="Phone Number" required>
+                        <input type="email" name="email" placeholder="Email Address" required>
+                        <input type="text" name="address" placeholder="Delivery Address (if applicable)">
+                        <select name="product" required>
+                            <option value="">Select Product Type</option>
+                            <option value="bulk-bag">Bulk Firewood Bag</option>
+                            <option value="full-cord">Full Cord</option>
+                            <option value="half-cord">Half Cord</option>
+                            <option value="quarter-cord">Quarter Cord</option>
+                        </select>
+                        <select name="service" required>
+                            <option value="">Delivery or Pickup?</option>
+                            <option value="delivery">Delivery</option>
+                            <option value="pickup">Self-Pickup</option>
+                        </select>
+                        <textarea name="message" placeholder="Additional Details or Questions" rows="4"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 RockWood Supply Co. | Quality Firewood Delivered Or Picked Up</p>
+            <p>4070 FM 1863, Bulverde, TX | <a href="tel:2108541362">(210) 854-1362</a> | <a href="tel:2108626968">(210) 862-6968</a></p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
